@@ -20,7 +20,7 @@ Then unzip them under the directory like
 ├── msmt17
 │   └── MSMT17_V1
 ```
-### Prepare Pre-trained Models for IBN-Net
+### Prepare Pre-trained Models
 ImageNet-pretrained models for **ResNet-50** will be automatically downloaded in the python script.
 
 ## Training and test unsupervised model for person re-ID
