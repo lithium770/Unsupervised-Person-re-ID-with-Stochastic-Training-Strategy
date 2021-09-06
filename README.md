@@ -1,7 +1,7 @@
 ![Python >=3.5](https://img.shields.io/badge/Python->=3.5-blue.svg)
 ![PyTorch >=1.0](https://img.shields.io/badge/PyTorch->=1.0-yellow.svg)
 
-# Unsupervised Person Re-identification with Stochastic Training Strategy(https://arxiv.org/pdf/2108.06938.pdf)
+# [Unsupervised Person Re-identification with Stochastic Training Strategy](https://arxiv.org/pdf/2108.06938.pdf)
 
 ## Prepare Datasets
 
@@ -19,7 +19,13 @@ Then unzip them under the directory like
 ├── msmt17
 │   └── MSMT17_V1
 ```
+### Prepare Pre-trained Models for IBN-Net
+ImageNet-pretrained models for **ResNet-50** will be automatically downloaded in the python script.
+
 ## Training and test unsupervised model for person re-ID
+We utilize 4 GTX-1080TI GPUs for training. **Note that**
+
++ use `--eps 0.7` (default) for MSMT17, and `--eps 0.5` for DukeMTMC-reID, Market-1501;
 *Example #1:* DukeMTMC-reID
 ```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/spcl_train_usl.py -d dukemtmc --eps 0.5 --logs-dir logs/duke_resnet50
