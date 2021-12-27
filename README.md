@@ -30,11 +30,11 @@ We utilize 4 GTX-1080TI GPUs for training. **Note that**
 
 ```shell
 # DukeMTMC-reID
-CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/spcl_train_usl.py -d dukemtmc --eps 0.5 --logs-dir logs/duke_resnet50
+CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/train_usl.py -d dukemtmc --eps 0.5 --logs-dir logs/duke_resnet50
 
 # Market-1501
-CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/spcl_train_usl.py -d market1501 --eps 0.5 --logs-dir logs/market_resnet50
+CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/train_usl.py -d market1501 --eps 0.5 --logs-dir logs/market_resnet50
 
 # MSMT17_V1
-CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/spcl_train_usl.py -d msmt17 --eps 0.7 --logs-dir logs/msmt_resnet50
+CUDA_VISIBLE_DEVICES=0,1,2,3 python examples/train_usl.py -d msmt17 --eps 0.7 --logs-dir logs/msmt_resnet50
 ```
