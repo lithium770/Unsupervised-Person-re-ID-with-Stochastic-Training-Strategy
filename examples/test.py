@@ -10,14 +10,14 @@ from torch import nn
 from torch.backends import cudnn
 from torch.utils.data import DataLoader
 
-from spcl import datasets
-from spcl import models
-from spcl.models.dsbn import convert_dsbn, convert_bn
-from spcl.evaluators import Evaluator
-from spcl.utils.data import transforms as T
-from spcl.utils.data.preprocessor import Preprocessor
-from spcl.utils.logging import Logger
-from spcl.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
+from reid import datasets
+from reid import models
+from reid.models.dsbn import convert_dsbn, convert_bn
+from reid.evaluators import Evaluator
+from reid.utils.data import transforms as T
+from reid.utils.data.preprocessor import Preprocessor
+from reid.utils.logging import Logger
+from reid.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
 
 
 def get_data(name, data_dir, height, width, batch_size, workers):
