@@ -2,7 +2,7 @@
 ![PyTorch >=1.0](https://img.shields.io/badge/PyTorch->=1.0-yellow.svg)
 
 # [Unsupervised Person Re-identification with Stochastic Training Strategy](https://arxiv.org/pdf/2108.06938.pdf)
-This repository contains the implementation of [Unsupervised Person Re-identification with Stochastic Training Strategy](https://arxiv.org/pdf/2108.06938.pdf). Our code is based on [SPCL](https://github.com/yxgeee/SpCL).
+This repository contains the implementation of [Unsupervised Person Re-identification with Stochastic Training Strategy](https://arxiv.org/pdf/2108.06938.pdf). Our code is based on [SPCL](https://github.com/yxgeee/SpCL) and [person-re-ranking](https://github.com/zhunzhong07/person-re-ranking/tree/master/python-version).
  
 ## Prepare Datasets
 
