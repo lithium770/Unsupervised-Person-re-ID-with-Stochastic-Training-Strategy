@@ -18,19 +18,19 @@ from datetime import timedelta
 
 from sklearn.cluster import DBSCAN
 
-from spcl import datasets
-from spcl import models
-from spcl.models.dsbn import convert_dsbn, convert_bn
-from spcl.models.hm import HybridMemory
-from spcl.trainers import SpCLTrainer_UDA
-from spcl.evaluators import Evaluator, extract_features
-from spcl.utils.data import IterLoader
-from spcl.utils.data import transforms as T
-from spcl.utils.data.sampler import RandomMultipleGallerySampler
-from spcl.utils.data.preprocessor import Preprocessor, UnsupervisedCamStylePreprocessor
-from spcl.utils.logging import Logger
-from spcl.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
-from spcl.utils.faiss_rerank import compute_jaccard_distance
+from reid import datasets
+from reid import models
+from reid.models.dsbn import convert_dsbn, convert_bn
+from reid.models.hm import HybridMemory
+from reid.trainers import SpCLTrainer_UDA
+from reid.evaluators import Evaluator, extract_features
+from reid.utils.data import IterLoader
+from reid.utils.data import transforms as T
+from reid.utils.data.sampler import RandomMultipleGallerySampler
+from reid.utils.data.preprocessor import Preprocessor, UnsupervisedCamStylePreprocessor
+from reid.utils.logging import Logger
+from reid.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
+from reid.utils.faiss_rerank import compute_jaccard_distance
 
 os.environ["CUDA_VISIBLE_DEVICES"] = '1, 0, 2, 3'
 
